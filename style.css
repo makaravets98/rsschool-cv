@@ -1,0 +1,370 @@
+/* --------------- reset.css --------------- */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, em, img, strong, sub, sup, b, u, i,  dl, dt, dd, ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;                               /* обнуляем отступы и убираем бордюры */
+	vertical-align: baseline;          /* приводим все к одной базовой линии */
+	background: transparent;      /* чтобы не проскакивали левые фоны, установленные по умолчанию */
+	font-size: 100%;                     /* размер шрифта всем одинаковый */
+}
+a {                                      	     /* ссылка не в общем списке чтобы не сбрасывать outline по умолчанию */
+	margin:0;
+	padding:0;
+	font-size:100%;
+	vertical-align:baseline;
+	background:transparent;
+	outline:none;
+}
+table {						/* устраняем отступы между ячейками таблицы */
+	border-collapse: collapse; 
+	border-spacing: 0;
+}
+td, td img {
+	vertical-align: top;			/* возвращаем привычное вертикальное выравнивание */
+} 
+input, select, button, textarea {
+	margin: 0; 				/* убираем отступы по умолчанию для элементов форм (в частности для checkbox и radio) */
+	font-size: 100%; 			/* делаем размер шрифтов везде одинаковым */
+	outline: none;
+}
+input[type="text"], input[type="password"], textarea {
+	padding: 0; 				/* убираем внутренние отступы для текстовых полей */
+}
+input[type="checkbox"] { 		/* вертикальное выравнивание чекбоксов и радиобатонов относительно меток */
+	vertical-align: bottom;
+}
+input[type="radio"] {
+	vertical-align: text-bottom;
+}
+sub {
+	vertical-align: sub;
+	font-size: smaller;
+}
+sup {
+	vertical-align: super;
+	font-size: smaller;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display:block;
+}
+nav ul {
+	 list-style:none;
+}
+/* --------------- /reset.css --------------- */
+
+/* --------------- базовые настройки ---------*/
+html {
+	min-height:100%; /* всегда показываем вертикальную полосу прокрутки  */
+}
+body {
+    font-family: 'Roboto', sans-serif; /* font-family: 'Roboto Condensed', sans-serif; */
+	color: #7e7f84;
+	text-align: left;
+	font-size: 1em; /* используем безопасные шрифтовые CSS стеки */
+	min-height:100%;
+}
+a, a:visited { /* порядок правил для ссылок имеет значение */
+	color: #f45a40;
+	text-decoration: underline;
+}
+a:hover {
+	color: #f45a40;
+	text-decoration:none;
+}
+a:focus, a:active {
+	color: #f45a40;
+	text-decoration: underline;
+}
+h1, h2, h3, h4, h5, h6{
+	font-weight:normal;
+}
+img{
+
+	max-width:100%;
+}
+.clr{
+	clear:both;
+}
+.clearfix:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+/* --------------- /базовые настройки ---------*/
+.center-block-main{
+    margin: 0 auto;
+    max-width: 1080px;
+}
+html {
+    scroll-behavior: smooth;
+    }
+.navigation_block
+{
+   
+    background-color: rgb(30 30 30);
+    
+}
+
+.list_item:hover {
+    background-color: rgb(42, 41, 41);
+    opacity: 2;
+}
+.navigation_list
+{
+    display: flex;
+    justify-content:space-around;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.list_item
+{
+   margin-top: 15px;
+   margin-bottom: 15px;
+   
+}
+.navigation_link
+{
+    text-decoration: none;
+    color: white;
+}
+
+.header_block
+{
+    background-color: rgb(30 30 30);
+  
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.photo_block
+{
+    flex-basis: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.about_me_block
+{
+    background-color: rgb(30 30 30);
+    width: 600px;
+}
+
+._about_p_FIO
+{
+    margin: 0;
+    margin-top: 48px;
+    font-size: 32px;
+    font-weight: 300;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: white;
+}
+
+._about_p_JUNIOR
+{
+    font-size: 28px;
+    font-weight: 200;
+    letter-spacing: 4px;
+    color: white;
+    background: rgb(42, 41, 41);
+    width: 460px;
+}
+.about_me_text
+{
+    color: white;
+}
+.contacts
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.contacts_link
+{
+    color: white;
+
+    font-size: 28px;
+    font-weight: 200;
+    letter-spacing: 4px;
+    color: white;
+    background: rgb(42, 41, 41);
+    width: 140px;
+}
+.about_me_phone
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.information_block
+{
+    background-color: rgb(245, 245, 220);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.ed-ho-co-block
+{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.education_text
+{
+
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    color: black;
+}
+.courses_text
+{
+   
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+}
+.hobbies_text
+{
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+}
+.exp_text
+{
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+}
+.ex-sk-co-block
+{
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.small_photo
+{
+    padding-right: 20px;
+}
+.about_education
+{
+    color: #4b6154;
+    line-height: 1;
+}
+.education_block
+{
+    width: 600px;
+    
+}
+.courses_block
+{
+    width: 600px;
+
+}
+.hobbies_block
+{
+    width: 350px;
+}
+.experience_block
+{
+    width: 600px;
+}
+.skills_block
+{
+    width: 350px;
+    border-bottom: 1px solid rgb(30 30 30);
+    
+    
+
+}
+.skill_block_text
+{
+    
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+}
+.languages_block
+{
+    background-color: black;
+    
+    width: 600px;
+}
+
+
+.div_scores
+{
+    display: flex;
+    justify-content: space-between;
+}
+.Logo
+{
+    display: flex;
+    align-items: center;
+}
+.div_section
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 30px;
+}
+.section_item::before 
+{
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 0px;
+    width: 10px;
+    height: 10px;
+    border: 1px solid rgb(30 30 30);
+    border-radius: 50%;
+    background-color: rgb(30 30 30);
+}
+.section-item-1::before
+ {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 0px;
+    width: 10px;
+    height: 10px;
+    border: 1px solid rgb(42, 41, 41);;
+    border-radius: 50%;
+}
+.section-item-1 {
+    position: relative;
+    padding-left: 17px;
+}
+.section_item {
+    position: relative;
+    padding-left: 17px;
+}
+.skill_list
+{
+    list-style: none;
+    padding-left: 0px;
+}
+.photo_JS
+{
+    margin-right: 15px;
+}
+.copyright_1
+{
+    color: white;
+}
+.footer_block
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(30 30 30);
+}
